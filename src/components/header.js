@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import {
   Collapse,
   Navbar,
@@ -6,11 +6,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
+  NavLink
 } from 'reactstrap';
 
 class Header extends Component {
@@ -43,28 +39,6 @@ class Header extends Component {
             <NavItem>
               <NavLink href="/home">Home</NavLink>
             </NavItem>
-            {this.state.fullname ?
-              (<Fragment>
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret>
-                   {this.state.fullname}
-            </DropdownToggle>
-                  <DropdownMenu right>
-                    <DropdownItem>
-                      Logout
-              </DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
-              </Fragment>) :
-              <Fragment>
-                <NavItem>
-                  <NavLink href="/login">Login</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/register">Register</NavLink>
-                </NavItem>
-              </Fragment>
-            }
           </Nav>
         </Collapse>
       </Navbar>

@@ -27,32 +27,30 @@ class Homepage extends Component {
                     mua lầm giá trị của sản phẩm thường xuyên xảy ra, etc...
                 </p></li>
                   <li>
-                    <p>Nhận thấy được những vấn đề đó cửa hàng chúng tôi được thành lập nên với 3 tiêu chí chính
+
                     <ul>
+                      Nhận thấy được những vấn đề đó cửa hàng chúng tôi được thành lập nên với 3 tiêu chí chính
                       <li>Cam kết hàng chính hãng</li>
                       <li>Cam kết bán hàng đúng giá trị của sản phẩm</li>
                       <li>Bảo đảm dịch vụ hậu mãi về sau cho khách hàng (Chính sách)</li>
                     </ul>
-                    </p>
- 
+
+
                   </li>
                   <li>
-                    <p>
-                      Cửa hàng chúng tôi có hơn 10 năm trong
-                      hoạt động lĩnh vực thời trang bao gồm:
                     <ul>
+                      Cửa hàng chúng tôi có hơn 10 năm trong
+                        hoạt động lĩnh vực thời trang bao gồm:
                         <li><strong>Giày dép nam nữ</strong></li>
-                        <li><strong>Quần áo nữ</strong></li>
-                      </ul>
+                      <li><strong>Quần áo nữ</strong></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Đặc biệt:</strong> cửa hàng chúng tôi chỉ bán hàng <strong>Offline</strong> xem tại cửa hàng.
                     </p>
                   </li>
                   <li>
-                    <p><strong>Đặc biệt:</strong> cửa hàng chúng tôi chỉ bán hàng <strong>Offline</strong> xem tại cửa hàng.                 
-                    </p>
-                    
-                  </li>
-                  <li>
-                  <p><strong>Lưu ý: </strong> chúng tôi chỉ có đúng 1 website này. Bất cứ website nào khác nêu tên chúng tôi đều là giả mạo</p>
+                    <p><strong>Lưu ý: </strong> chúng tôi chỉ có đúng 1 website này. Bất cứ website nào khác nêu tên chúng tôi đều là giả mạo</p>
                   </li>
                 </ul>
               </div>
