@@ -77,6 +77,46 @@
   position: absolute;
   bottom: 0;
 }
+.content-sentence{
+  font-family: dancing;
+  font-size: 25px;
+  word-break: break-word;
+}
+.content-author{
+  font-family: dancing;
+  font-size: 25px;
+  word-break: break-word;
+  float: right;
+  font-weight: bold;
+}
+.content-body-fake{
+  display: table-cell;
+  width: 100vw;
+  height: 360px;
+  vertical-align: middle;
+}
+.content-link{
+    font-size: 25px;
+    font-family: dancing;
+    color: #1dbe1d !important;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px black;
+    display: inline-block;
+    text-decoration: none !important;
+}
+.content-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s;
+}
+.content-link:hover::after {
+  width: 100%;
+  border:none;
+}
+
 .pad-0{
   padding: 0;
 }
@@ -89,6 +129,10 @@
 @font-face{
   font-family: buffterfly;
   src: url('./fonts/ButterflyKids-Regular.ttf');
+}
+@font-face{
+  font-family: dancing;
+  src: url('./fonts/DancingScript-Regular.ttf');
 }
 
 /*Register**/

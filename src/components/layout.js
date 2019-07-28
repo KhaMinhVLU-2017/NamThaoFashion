@@ -38,7 +38,7 @@ class Layout extends React.Component {
               <h1 className='bg-title'>Để không ai có thể thay thế, bạn phải luôn luôn khác biệt</h1>
             </div>
           </div>
-          <Route exact path={`${this.props.match.path}`} component={Homepage} />
+          <Route path={`${this.props.match.path}`} component={Homepage} />
           <Route path={`${this.props.match.path}/create`} component={CreatePost} />
           <Route path={`${this.props.match.path}/detail/:id`} component={Detail} />
           <Route path={`${this.props.match.path}/edit/:id`} component={Update} />

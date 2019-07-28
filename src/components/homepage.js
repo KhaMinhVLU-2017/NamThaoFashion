@@ -3,9 +3,15 @@ import { Col, Row } from 'reactstrap'
 import Titlesector from './titlesector'
 import ImgContent from '../images/content.jpg'
 import ImgYeezy from '../images/yeezy.jpg'
+import ImgGif from '../images/bggif.gif'
+import { getTimeCurrent, listSentence, getRandomInt } from '../helper/compute'
+import { Link, Route, Switch } from 'react-router-dom'
 
 class Homepage extends Component {
   render() {
+    let myTimeCurrent = getTimeCurrent()
+    let totalSentence = listSentence.length - 1
+    let sentence = listSentence[getRandomInt(totalSentence)]
     return (
       <>
         <Titlesector title='Thời trang & Cuộc sống' />
@@ -104,10 +110,37 @@ class Homepage extends Component {
               <img className='img-resize' src={ImgContent} alt='Images' />
             </Col>
           </Row>
+          <Row className='content-row'>
+            <Col className='content' xs='12' sm='6' md='12' lg='6'>
+              <p className='content-title'>Châm ngôn sống mỗi ngày</p>
+              <p className='content-sapo'><em>JudasFate</em>&ensp;{myTimeCurrent}</p>
+              <Link className='content-link' to={`${this.props.match.path}/sentence`}>Lấy châm ngôn</Link>
+              <div className='content-body-fake'>
+                <Switch>
+                  <Route path={`${this.props.match.path}/sentence`} render={(rest) => <DivSentence {...rest} {...sentence}/>} />
+                </Switch>
+              </div>
+              <p className='content-footer'>&reg; Nam Thao Fashion</p>
+            </Col>
+            <Col className='pad-0' xs='12' sm='6' md='12' lg='6'>
+              <img className='img-resize' src={ImgGif} alt='Images' />
+            </Col>
+          </Row>
         </Col>
       </>
     )
   }
 }
+
+const DivSentence = ({sentence,author}) => {
+  return (
+    <>
+      <p className='content-sentence'>{sentence}</p>
+      <p className='content-author'>{author}</p>
+    </>
+  )
+}
+
+
 
 export default Homepage
