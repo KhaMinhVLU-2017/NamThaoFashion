@@ -29,10 +29,9 @@ class Homepage extends Component {
                   <li>
 
                     <ul>
-                      Nhận thấy được những vấn đề đó cửa hàng chúng tôi được thành lập nên với 3 tiêu chí chính
-                      <li>Cam kết hàng chính hãng</li>
+                      Nhận thấy được những vấn đề đó cửa hàng chúng tôi được thành lập nên với 2 tiêu chí chính
+                      <li>Cam kết hàng công ty</li>
                       <li>Cam kết bán hàng đúng giá trị của sản phẩm</li>
-                      <li>Bảo đảm dịch vụ hậu mãi về sau cho khách hàng (Chính sách)</li>
                     </ul>
 
 
