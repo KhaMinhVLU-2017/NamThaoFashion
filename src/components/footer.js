@@ -1,5 +1,7 @@
 import React from 'react'
 import { Col, Row, Container } from 'reactstrap'
+import Sound from 'react-sound'
+import MusicLove from '../musics/music.mp3'
 
 function Footer() {
   return (
@@ -11,6 +13,11 @@ function Footer() {
             <ul className='footer-ul'>
               <li><strong>Địa chỉ: </strong> Đường 30/4, Phường 1, Thị Xã Cai Lậy, Tỉnh Tiền Giang</li>
               <li><strong>Liên hệ: </strong> namthaofashion@gmail.com</li>
+              <Sound
+                url={MusicLove}
+                playStatus={Sound.status.PLAYING}
+                autoLoad={true}
+              />
             </ul>
           </Col>
           <Col lg='6' md='6' sm='12' xs='12'>
