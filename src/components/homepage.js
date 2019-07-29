@@ -23,7 +23,7 @@ class Homepage extends Component {
               <div className='content-body'>
                 <ul>
                   <li><p>
-                    Ngay từ những năm 2010 khi thời trang là thứ gì đó còn khá mới mẻ
+                    Ngay từ những năm 2006 khi thời trang là thứ gì đó còn khá mới mẻ
                     đối với một số người dân ở địa phương. Bởi vì lúc đó việc mua sắm tại cửa hàng "Shop" nó là thứ
                     gì đó quá xa xỉ đối với họ thay vì phải đến shop thì họ có thể ra chợ như thường niên.
                 </p></li>
